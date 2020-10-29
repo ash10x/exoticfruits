@@ -43,7 +43,8 @@
                             <div class="d-flex justify-content-between w-100">
                                 <h4>{{__('Manage Credit Note')}}</h4>
                                 @can('create credit note')
-                                    <a href="#" data-url="{{ route('invoice.custom.credit.note') }}" data-ajax-popup="true" data-title="{{__('Create New Credit Note')}}" class="btn btn-icon icon-left btn-primary">
+                                    <!-- data-url="{{ route('invoice.custom.credit.note') }}" -->
+                                    <a href="{{route('creditnote.test')}}"  data-ajax-popup="true" data-title="{{__('Create New Credit Note')}}" class="btn btn-icon icon-left btn-primary">
                                         <span class="btn-inner--icon"><i class="fas fa-plus"></i></span>
                                         <span class="btn-inner--text"> {{__('Create')}}</span>
                                     </a>

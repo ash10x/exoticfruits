@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\CreditNote;
 use App\Invoice;
 use App\Utility;
+use App\InvoiceProduct;
 use Illuminate\Http\Request;
 
 class CreditNoteController extends Controller
@@ -27,6 +28,7 @@ class CreditNoteController extends Controller
             return redirect()->back()->with('error', __('Permission denied.'));
         }
     }
+
 
     public function create($invoice_id)
     {

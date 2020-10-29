@@ -502,6 +502,7 @@ Route::group(
     Route::get('invoice/{id}/credit-note/edit/{cn_id}', 'CreditNoteController@edit')->name('invoice.edit.credit.note');
     Route::put('invoice/{id}/credit-note/edit/{cn_id}', 'CreditNoteController@update')->name('invoice.edit.credit.note');
     Route::delete('invoice/{id}/credit-note/delete/{cn_id}', 'CreditNoteController@destroy')->name('invoice.delete.credit.note');
+    Route::get('Test-Credit-Note', 'CreditNoteCustomController@test')->name('creditnote.test');
 
 }
 );
