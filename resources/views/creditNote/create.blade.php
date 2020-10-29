@@ -1,4 +1,4 @@
-{{ Form::open(array('route' => array('invoice.credit.note',$invoice_id),'mothod'=>'post')) }}
+{{ Form::open(array('route' => array('invoice.credit.note',$invoice_id),'method'=>'post')) }}
 <div class="row">
     <div class="form-group  col-md-6">
         {{ Form::label('date', __('Date')) }}
